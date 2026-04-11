@@ -1,6 +1,6 @@
 ## Image reconstruction and classification using CNN
 
-See the detail of [Torchvision documentation](https://docs.pytorch.org/vision/main/index.html)
+See for the details: [Torchvision documentation](https://docs.pytorch.org/vision/main/index.html)
 
 ## Compatible with python 3.11.3 Environment
 ```python
