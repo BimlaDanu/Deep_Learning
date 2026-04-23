@@ -21,3 +21,14 @@ See for the details: [Torchvision documentation](https://docs.pytorch.org/vision
 - print(torch.__version__)
 - print(torchvision.__version__)
 ```
+
+```python
+import torch
+
+if torch.cuda.is_available():
+    device = torch.device("cuda")
+else:
+    device = torch.device("cpu")
+
+print("Using device:", device)
+```
