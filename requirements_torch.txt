@@ -1,0 +1,34 @@
+# ═══════════════════════════════════════════════════════════
+#  requirements_torch.txt — torch_env
+#  Compatible with Python 3.11.3 + macOS Apple Silicon / Intel
+#  Covers: PyTorch, TorchVision, OpenCV, NumPy, Pandas,
+#          Scikit-learn, SciPy, Matplotlib, VQE-ready
+# ═══════════════════════════════════════════════════════════
+# ── Core numeric stack pinned for mutual compatibility ──
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# ── PyTorch ecosystem ─────────────────────────────────────
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# ── Computer Vision ───────────────────────────────────────
+opencv-python==4.10.0.84
+
+# ── Machine Learning ──────────────────────────────────────
+scikit-learn==1.4.2
+
+# ── Visualisation ─────────────────────────────────────────
+matplotlib==3.9.0
+seaborn==0.13.2
+plotly==5.22.0
+
+# ── Jupyter support ───────────────────────────────────────
+ipykernel==6.29.4
+notebook==7.2.1
+
+# ── Utilities ─────────────────────────────────────────────
+tqdm==4.66.4
+Pillow==10.3.0
