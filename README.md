@@ -1,3 +1,9 @@
+```bash
+$ make clean
+$ make 
+$ source  torch_env/bin/activate
+```
+
 ## Image reconstruction and classification using CNN
 
 See for the details: [Torchvision documentation](https://docs.pytorch.org/vision/main/index.html)
@@ -5,7 +11,7 @@ See for the details: [Torchvision documentation](https://docs.pytorch.org/vision
 ## Compatible with python 3.11.3 Environment
 ```python
 - !pip uninstall torch torchvision -y
-- !pip install torch==2.1.2 torchvision==0.16.2
+- !pip install torch==2.3.1 torchvision==0.18.1
 - !pip show torch torchvision
 ```
 
