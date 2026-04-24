@@ -1,7 +1,7 @@
 ```bash
-$ make clean
-$ make 
-$ source  torch_env/bin/activate
+ make clean
+ make 
+ source  torch_env/bin/activate
 ```
 
 ## Image reconstruction and classification using CNN
@@ -10,31 +10,20 @@ See for the details: [Torchvision documentation](https://docs.pytorch.org/vision
 
 ## Compatible with python 3.11.3 Environment
 ```python
-- !pip uninstall torch torchvision -y
-- !pip install torch==2.3.1 torchvision==0.18.1
-- !pip show torch torchvision
+ !pip uninstall torch torchvision -y
+ !pip install torch==2.3.1 torchvision==0.18.1
+ !pip show torch torchvision
 ```
 
 
 ## CUDA Environment
 ```python
-- !pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu124
+ !pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu124
 
-- import torch
-- import torchvision
-- !pip show torch torchvision
+ import torch
+ import torchvision
+ !pip show torch torchvision
 
-- print(torch.__version__)
-- print(torchvision.__version__)
-```
-
-```python
-import torch
-
-if torch.cuda.is_available():
-    device = torch.device("cuda")
-else:
-    device = torch.device("cpu")
-
-print("Using device:", device)
+ print(torch.__version__)
+ print(torchvision.__version__)
 ```
