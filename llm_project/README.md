@@ -1,6 +1,6 @@
 # LLM Project Builder
 
-- From scratch — three phases.
+- Building tiny LLM from scratch in three phases.
 
 ```
 llm_project/
@@ -17,8 +17,8 @@ llm_project/
 │   ├── charts.py           # All Plotly figure builders (pure functions, no Dash)
 │   └── inference_ui.py     # Interactive generation panel + callbacks
 └── utils/
-    ├── logger.py           # TrainingLogger → training_log.csv
-    └── checkpoint.py       # CheckpointManager → save/resume/best
+    ├── logger.py           # TrainingLogger -> training_log.csv
+    └── checkpoint.py       # CheckpointManager -> save/resume/best
 ```
 
 ---
@@ -75,15 +75,15 @@ Tabs:
 
 ## Customise
 
-To train on your own text, edit `train/train_scratch.py`:
+To training on text `train/train_scratch.py`:
 ```python
 CONFIG = {
-    "data_path": "path/to/your_corpus.txt",   # ← point here
+    "data_path": "path/to/your_corpus.txt",   # 
     ...
 }
 ```
 
-To scale up the model, adjust:
+To scale up the model adjust:
 ```python
 "n_layers": 6,
 "n_heads":  8,
