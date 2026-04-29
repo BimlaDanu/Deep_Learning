@@ -10,8 +10,8 @@ llm_project/
 │   ├── transformer.py      # GPTConfig, CausalSelfAttention, FeedForward, TransformerBlock, GPT
 │   └── generate.py         # generate(), beam_search(), get_next_token_probs(), GenerationConfig
 ├── train/
-│   ├── train_scratch.py    # Phase 1 — full training loop from scratch
-│   └── finetune_gpt2.py    # Phase 2 — LoRA fine-tune GPT-2 (needs transformers + peft)
+│   ├── train_scratch.py    # Phase 1 —> full training loop from scratch
+│   └── finetune_gpt2.py    # Phase 2 —> LoRA fine-tune GPT-2 (needs transformers + peft)
 ├── dashboard/
 │   ├── app.py              # Dash entrypoint — run this to open the dashboard
 │   ├── charts.py           # All Plotly figure builders (pure functions, no Dash)
@@ -57,19 +57,19 @@ python -m train.finetune_gpt2
 
 ## Dashboard
 
-While training is running (or after), open the dashboard:
+Open the dashboard While training is running or after:
 ```bash
 python -m dashboard.app
 # -> http://127.0.0.1:8050
 ```
 
 Tabs:
-- **Overview** — 2×2 live training summary
-- **Loss** — train + val loss, LR schedule, grad norm
-- **Perplexity** — perplexity curves
-- **Attention** — per-layer, per-head attention heatmap
-- **Embeddings** — PCA or t-SNE token embedding scatter
-- **Inference** — generate text with temperature / top-k / top-p / beam search sliders
+- **Overview:** — 2×2 live training summary
+- **Loss:** — train + val loss, LR schedule, grad norm
+- **Perplexity:** — perplexity curves
+- **Attention:** — per-layer, per-head attention heatmap
+- **Embeddings:** — PCA or t-SNE token embedding scatter
+- **Inference:** — generate text with temperature / top-k / top-p / beam search sliders
 
 ---
 
@@ -78,12 +78,13 @@ Tabs:
 To training on text `train/train_scratch.py`:
 ```python
 CONFIG = {
-    "data_path": "path/to/your_corpus.txt",   # 
+    "data_path": "path/to/your_corpus.txt",    
     ...
 }
 ```
 
-To scale up the model adjust:
+To scale up the model one can adjust:
+
 ```python
 "n_layers": 6,
 "n_heads":  8,
