@@ -1,2 +1,2 @@
-## Building convolutional neural network  
+####  Building convolutional neural network with TensorFlow and Keras 
 
