@@ -1,11 +1,13 @@
 - SCHEMATIC
 
+```python
 faq-vector-search/
 │
 ├── app.py
 ├── data.py
 ├── requirements.txt
 └── README.md
+```
 
 
 ```bash
@@ -33,7 +35,11 @@ Ctrl + C # stopping the app.py
 
 Querries on web 
     - http://127.0.0.1:8000/docs
+
     - http://127.0.0.1:8000/search?query=refund
+
     - http://127.0.0.1:8000/search?query=change email
+
     - http://127.0.0.1:8000/docs
+
     - http://127.0.0.1:8000/search?query=I forgot my password
