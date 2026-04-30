@@ -1,4 +1,4 @@
-# LLM Project Builder
+### LLM Project Builder
 
 - Building tiny LLM from scratch in three phases.
 
@@ -23,7 +23,7 @@ llm_project/
 
 ---
 
-## Phase 1 — Train a tiny GPT from scratch
+#### Phase 1:  Train a tiny GPT from scratch
 
 ```bash
 cd llm_project
@@ -41,7 +41,7 @@ Outputs written automatically:
 
 ---
 
-## Phase 2 — Fine-tune GPT with LoRA
+#### Phase 2: Fine-tune GPT with LoRA
 
 Install extra deps first:
 ```bash
@@ -55,13 +55,16 @@ python -m train.finetune_gpt2
 
 ---
 
-## Dashboard
+#### Dashboard
 
 Open the dashboard While training is running or after:
 ```bash
 python -m dashboard.app
-# -> http://127.0.0.1:8050
 ```
+on web:
+
+http://127.0.0.1:8050
+
 
 Tabs:
 - **Overview:** — 2×2 live training summary
@@ -73,7 +76,7 @@ Tabs:
 
 ---
 
-## Customise
+#### Optimization
 
 To training on text `train/train_scratch.py`:
 ```python
