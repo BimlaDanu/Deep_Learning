@@ -17,8 +17,10 @@ python -m spacy download en_core_web_sm  # to download seprately
 Instead of this
 ```bash
 python -m spacy download en_core_web_sm
-do:
 ```
+try this for better uses
+
+```bash
 pip install \
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 ```
@@ -51,6 +53,8 @@ jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 - For a manual installation 
 install:
-	pip install -r requirements.txt
-	python -m spacy download en_core_web_sm
-    pip install Wikipedia-API
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+pip install Wikipedia-API
+```
