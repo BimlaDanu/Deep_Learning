@@ -4,11 +4,12 @@
  source  torch_env/bin/activate
 ```
 
-## Image reconstruction and classification using CNN
+#### Image reconstruction and classification using CNN
 
 See for the details: [Torchvision documentation](https://docs.pytorch.org/vision/main/index.html)
 
-## Compatible with python 3.11.3 Environment
+#### Compatible with python 3.11.3 Environment
+
 ```python
  !pip uninstall torch torchvision -y
  !pip install torch==2.3.1 torchvision==0.18.1
@@ -16,7 +17,8 @@ See for the details: [Torchvision documentation](https://docs.pytorch.org/vision
 ```
 
 
-## CUDA Environment
+#### CUDA Environment
+
 ```python
  !pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu124
 
