@@ -46,13 +46,13 @@ git commit -m "Stop tracking virtual environment"
 git status --ignored
 ```
 
+```bash
 pip install ipywidgets
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
+```
 
 
-
-- For a manual installation 
-install:
+- Install:
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
